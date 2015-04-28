@@ -22,7 +22,7 @@ while [[ $VERIFIED != true && $CAN_CURL == true || $FIRST_PASS == true ]]; do
 
     STATUS=$(curl -s -o /dev/null -I -w "%{http_code}" "$HIPCHAT_SERVER")
 
-    if [[ "$STATUS" == "200" ]]; then
+    if [[ "$STATUS" == "403" ]]; then
         VERIFIED=true
     else
         echo "Server url is not correct, are you missing 'https://' ?"

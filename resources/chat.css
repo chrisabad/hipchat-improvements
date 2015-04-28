@@ -10,6 +10,7 @@ html {
     overflow:hidden;
 }
 img.avatar {
+    border-radius: 20px;
     height:40px;
     margin:0;
     padding:0;
